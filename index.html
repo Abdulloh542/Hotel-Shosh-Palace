@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Shosh Palace — Toshkentning markazida qulay dam olish</title>
+  <meta name="description"
+    content="Hotel Shosh Palace — Toshkent shahridagi qulay mehmonxona. Zamonaviy xonalar, basseyn, bepul nonushta va aeroportga yaqin joylashuv. Hoziroq band qiling.">
+  <meta name="keywords" content="Hotel Shosh Palace, Toshkent mehmonxona, Yakkasaroy, O'zbekiston, xona band qilish">
+  <meta property="og:title" content="Hotel Shosh Palace — Toshkentda qulay dam olish">
+  <meta property="og:description" content="Zamonaviy xonalar, ajoyib joylashuv va do'stona xizmat. Hoziroq bog'laning.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="hotel-images/Logo.png">
+  <link rel="apple-touch-icon" href="hotel-images/Logo.png">
+</head>
+
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-logo">
+        <img src="hotel-images/Logo.png" alt="Hotel Shosh Palace logo" width="42" height="42">
+        <div class="navbar-logo-text">
+          Hotel Shosh Palace
+          <small>Tashkent, Uzbekistan</small>
+        </div>
+      </a>
+
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="#rooms" data-i18n="nav_rooms">Xonalar</a></li>
+        <li><a href="#amenities" data-i18n="nav_amenities">Qulayliklar</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">Galereya</a></li>
+        <li><a href="#location" data-i18n="nav_location">Joylashuv</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Aloqa</a></li>
+        <li class="mobile-social">
+          <div class="mobile-social-links">
+            <!-- Telegram logo -->
+            <a href="https://t.me/Shoshpalace" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z" />
+              </svg>
+            </a>
+            <!-- WhatsApp logo -->
+            <a href="https://wa.me/998936730307" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+            <!-- Instagram logo -->
+            <a href="https://www.instagram.com/shosh_palace_hotel" target="_blank" rel="noopener" aria-label="Instagram"
+              title="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg>
+            </a>
+            <!-- Phone icon -->
+            <a href="tel:+998951464000" aria-label="Telefon" title="Telefon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="navbar-right">
+        <!-- Dropdown Language Switcher -->
+        <div class="lang-dropdown" id="lang-dropdown">
+          <button class="lang-current" id="lang-current">
+            <span id="lang-current-text">UZ</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="lang-options" id="lang-options">
+            <button data-lang="uz">🇺🇿 O'zbekcha</button>
+            <button data-lang="ru">🇷🇺 Русский</button>
+            <button data-lang="en">🇬🇧 English</button>
+          </div>
+        </div>
+        <a href="tel:+998951464000" class="navbar-phone">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <span>+998 95 146 40 00</span>
+        </a>
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <picture>
+        <source srcset="hotel-images/hero-mobile-newest.png" media="(max-width: 768px)">
+        <img src="hotel-images/hero-main-new.jpg" alt="Hotel Shosh Palace exterior" loading="eager">
+      </picture>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="hotel-stars">★★★</span>
+          <span class="hotel-label-tag">HOTEL</span>
+        </div>
+        <h1 class="hero-title">Hotel Shosh Palace</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          Toshkent markazida zamonaviy xonalar va ajoyib xizmat bilan qulay dam olish.
+        </p>
+        <div class="hero-buttons">
+          <a href="#rooms" class="btn btn-primary" data-i18n="hero_book">Joy band qilish</a>
+          <a href="#gallery" class="btn btn-secondary" data-i18n="hero_rooms">Xonalarni ko'rish</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <img src="hotel-images/Gemini_Generated_Image_hv79nxhv79nxhv79.png" alt="Hotel Shosh Palace hovli">
+        </div>
+        <div class="about-text reveal d2">
+          <span class="section-label" data-i18n="about_label">Mehmonxona haqida</span>
+          <h2 class="section-title" data-i18n="about_title">Hotel Shosh Palace</h2>
+          <p data-i18n="about_p1">Hotel Shosh Palace — Toshkent shahrining Yakkasaroy tumanida joylashgan qulay
+            mehmonxona. Mehmonxona zamonaviy xonalar, do'stona xizmat va shahar markazi hamda aeroportga qulay kirish
+            imkoniyatini taqdim etadi.</p>
+          <p data-i18n="about_p2">Biznes safarchilar va O'zbekistonga sayohat qiluvchi turistlar uchun ideal tanlov.</p>
+          <ul class="about-facts">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="fact_wifi">Bepul Wi-Fi</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="fact_breakfast">Bepul nonushta</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="fact_pool">Ochiq basseyn</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="fact_shuttle">Aeroport transferi</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="fact_parking">Bepul avtoturargoh</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ROOMS ═══════════ -->
+  <section class="rooms" id="rooms">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="rooms_label">Xonalarimiz</span>
+        <h2 class="section-title" data-i18n="rooms_title">Qulay xonalar</h2>
+        <p class="section-subtitle" data-i18n="rooms_subtitle">Toshkentda mukammal dam olish uchun xonalarimizdan birini
+          tanlang.</p>
+        <hr class="section-divider">
+      </div>
+      <div class="rooms-grid">
+
+        <div class="room-card reveal d1">
+          <div class="room-card-img">
+            <img src="hotel-images/518475270.jpg" alt="Standard Double Room">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="room1_name">Standard Double xona</h3>
+            <p class="room-card-desc" data-i18n="room1_desc">Katta ikki kishilik karavot, tekis ekranli televizor, shkaf
+              va bog' manzarasi bilan qulay xona.</p>
+            <div class="room-amenities">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                  <line x1="12" y1="20" x2="12.01" y2="20" />
+                </svg>WiFi</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+                  <polyline points="17 2 12 7 7 2" />
+                </svg>TV</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>AC</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                  <line x1="6" y1="1" x2="6" y2="4" />
+                  <line x1="10" y1="1" x2="10" y2="4" />
+                  <line x1="14" y1="1" x2="14" y2="4" />
+                </svg><span data-i18n="amenity_kettle">Choynak</span></span>
+            </div>
+            <div class="room-card-footer">
+              <a href="https://www.booking.com/hotel/uz/shosh-palace.html" target="_blank" rel="noopener"
+                class="btn btn-outline" data-i18n="room_book">Band qilish</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal d2">
+          <div class="room-card-img">
+            <img src="hotel-images/604926654.jpg" alt="Standard Twin Room">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="room2_name">Standard Twin xona</h3>
+            <p class="room-card-desc" data-i18n="room2_desc">Ikkita alohida karavot, zamonaviy jihozlar va yorug' muhit
+              bilan qulay xona.</p>
+            <div class="room-amenities">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                  <line x1="12" y1="20" x2="12.01" y2="20" />
+                </svg>WiFi</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+                  <polyline points="17 2 12 7 7 2" />
+                </svg>TV</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>AC</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                  <line x1="6" y1="1" x2="6" y2="4" />
+                  <line x1="10" y1="1" x2="10" y2="4" />
+                  <line x1="14" y1="1" x2="14" y2="4" />
+                </svg><span data-i18n="amenity_kettle">Choynak</span></span>
+            </div>
+            <div class="room-card-footer">
+              <a href="https://www.booking.com/hotel/uz/shosh-palace.html" target="_blank" rel="noopener"
+                class="btn btn-outline" data-i18n="room_book">Band qilish</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card reveal d3">
+          <div class="room-card-img">
+            <img src="hotel-images/IMG_2464.JPG" alt="Triple Room">
+          </div>
+          <div class="room-card-body">
+            <h3 class="room-card-name" data-i18n="room3_name">Uch kishilik xona</h3>
+            <p class="room-card-desc" data-i18n="room3_desc">Uchta qulay karavot, bog' manzarasi va barcha zamonaviy
+              qulayliklar bilan keng xona.</p>
+            <div class="room-amenities">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                  <line x1="12" y1="20" x2="12.01" y2="20" />
+                </svg>WiFi</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+                  <polyline points="17 2 12 7 7 2" />
+                </svg>TV</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>AC</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path
+                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg><span data-i18n="amenity_balcony">Balkon</span></span>
+            </div>
+            <div class="room-card-footer">
+              <a href="https://www.booking.com/hotel/uz/shosh-palace.html" target="_blank" rel="noopener"
+                class="btn btn-outline" data-i18n="room_book">Band qilish</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ POOL ═══════════ -->
+  <section class="pool-section" id="pool">
+    <div class="container">
+      <div class="pool-grid">
+        <div class="pool-images reveal">
+          <div class="pool-img-main">
+            <img src="hotel-images/pool-day.jpg" alt="Hotel Shosh Palace basseyn — kunduzgi ko'rinish">
+          </div>
+          <div class="pool-img-secondary">
+            <img src="hotel-images/pool-night.jpg" alt="Hotel Shosh Palace basseyn — kechki ko'rinish">
+          </div>
+        </div>
+        <div class="pool-text reveal d2">
+          <span class="section-label" data-i18n="pool_label">Ochiq basseyn</span>
+          <h2 class="section-title" data-i18n="pool_title">Basseynda dam oling</h2>
+          <p data-i18n="pool_p1">Hotel Shosh Palace mehmonlariga ochiq havoda suzish basseyni taqdim etadi. Issiq
+            kunlarda salqinlaning va quyoshda dam oling.</p>
+          <p data-i18n="pool_p2">Basseyn atrofida shezlonglar va dam olish joyi mavjud. Oilangiz yoki do'stlaringiz
+            bilan birga yoqimli vaqt o'tkazing.</p>
+          <ul class="pool-features">
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="pool_f1">Ochiq havoda basseyn</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="pool_f2">Shezlonglar va dam olish joyi</span></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg><span data-i18n="pool_f3">Toza va xavfsiz suv</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ GALLERY ═══════════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="gallery_label">Fotogalereya</span>
+        <h2 class="section-title" data-i18n="gallery_title">Mehmonxonamizni ko'ring</h2>
+        <p class="section-subtitle" data-i18n="gallery_subtitle">Hotel Shosh Palace bo'ylab virtual sayohat.</p>
+        <hr class="section-divider">
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-cell span-row" data-index="0">
+          <img src="hotel-images/exterior-new.jpg" alt="Hotel Shosh Palace exterior">
+          <span class="g-label" data-i18n="g_exterior">Tashqi ko'rinish</span>
+        </div>
+        <div class="gallery-cell" data-index="1">
+          <img src="hotel-images/0122b63ef1aca904c511929cef1de306.webp" alt="Twin room">
+          <span class="g-label" data-i18n="g_room">Xona</span>
+        </div>
+        <div class="gallery-cell" data-index="2">
+          <img src="hotel-images/IMG_2483.JPG" alt="Restaurant">
+          <span class="g-label" data-i18n="g_restaurant">Restoran</span>
+        </div>
+        <div class="gallery-cell span-col" data-index="3">
+          <img src="hotel-images/pool-day.jpg" alt="Pool">
+          <span class="g-label" data-i18n="g_pool">Basseyn</span>
+        </div>
+        <div class="gallery-cell" data-index="4">
+          <img src="hotel-images/f1ec8b707d4c34d433f37267e69f815b.webp" alt="Breakfast buffet">
+          <span class="g-label" data-i18n="g_breakfast">Nonushta</span>
+        </div>
+        <div class="gallery-cell" data-index="5">
+          <img src="hotel-images/bath.JPG" alt="Bathroom">
+          <span class="g-label" data-i18n="g_bathroom">Hammom</span>
+        </div>
+        <div class="gallery-cell" data-index="6">
+          <img src="hotel-images/08346ba01c7e969bf691179e1a96b418.webp" alt="Room detail">
+          <span class="g-label" data-i18n="g_detail">Xona detali</span>
+        </div>
+        <div class="gallery-cell" data-index="7">
+          <img src="hotel-images/Gemini_Generated_Image_hv79nxhv79nxhv79.png" alt="Courtyard">
+          <span class="g-label" data-i18n="g_courtyard">Hovli</span>
+        </div>
+        <div class="gallery-cell" data-index="8">
+          <img src="hotel-images/pool-night.jpg" alt="Pool night">
+          <span class="g-label" data-i18n="g_pool_night">Basseyn (kechasi)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ AMENITIES ═══════════ -->
+  <section class="amenities" id="amenities">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="amenities_label">Qulayliklar</span>
+        <h2 class="section-title" data-i18n="amenities_title">Mehmonxona qulayliklari</h2>
+        <p class="section-subtitle" data-i18n="amenities_subtitle">Qulay va yoqimli dam olish uchun barcha sharoitlar.
+        </p>
+        <hr class="section-divider">
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+              <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <line x1="12" y1="20" x2="12.01" y2="20" />
+            </svg></div>
+          <h3 data-i18n="am_wifi">Bepul Wi-Fi</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg></div>
+          <h3 data-i18n="am_breakfast">Bepul nonushta</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="3" width="15" height="13" />
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg></div>
+          <h3 data-i18n="am_parking">Bepul avtoturargoh</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg></div>
+          <h3 data-i18n="am_pool">Ochiq basseyn</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8" />
+              <path d="M12 17v4" />
+            </svg></div>
+          <h3 data-i18n="am_ac">Konditsioner</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg></div>
+          <h3 data-i18n="am_restaurant">Restoran</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+            </svg></div>
+          <h3 data-i18n="am_shuttle">Aeroport transferi</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 15h4v3a2 2 0 1 1-4 0v-3Z" />
+              <path d="M14 15h4v3a2 2 0 1 0-4 0v-3Z" />
+              <path d="M6 6h4v3a2 2 0 1 0-4 0V6Z" />
+              <path d="M14 6h4v3a2 2 0 1 1-4 0V6Z" />
+              <path d="M15 9h-6" />
+              <path d="M15 15h-6" />
+              <path d="M8 10v4" />
+              <path d="M16 10v4" />
+            </svg></div>
+          <h3 data-i18n="am_fitness">Fitnes markazi</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M11 5c-1.66 0-3 1.34-3 3 0 1.2.7 2.24 1.71 2.74l-.9 2.21C7.8 12.9 6.8 12.5 6 12c-1.66 0-3 1.34-3 3 0 1.25.77 2.32 1.86 2.77L4 20h2l.5-2h11l.5 2h2l-.86-2.23C20.23 17.32 21 16.25 21 15c0-1.66-1.34-3-3-3-.8 0-1.55.3-2.12.83l-1.07-2.61l.19-.06C16.14 9.61 17 8.41 17 7c0-2.21-1.79-4-4-4s-4 1.79-4 4c0 .35.05.68.14 1l-1.29.35c-.09-.44-.14-.89-.14-1.35C7.71 4.79 9.5 3 11.71 3s4 1.79 4 4c0 1.1-.45 2.1-1.17 2.83l1.17 2.84C16.2 12.1 17 12 18 12c1.1 0 2 .9 2 2 0 .93-.64 1.71-1.5 1.93l.87 2.07h-1.44l-.5-2h-11l-.5 2H4.44l.87-2.07C4.46 15.71 3.82 14.93 3.82 14c0-1.1.9-2 2-2c.86 0 1.58.54 1.87 1.29l1.45-3.55C8.42 9.25 8 8.42 8 7.5c0-1.93 1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 .36-.06.71-.16 1.04l1.43.32C16.63 8.35 16.71 7.93 16.71 7.5a5.21 5.21 0 0 0-5.21-5.21z" />
+            </svg></div>
+          <h3 data-i18n="am_pets">Uy hayvonlari ruxsat</h3>
+        </div>
+        <div class="amenity-item reveal">
+          <div class="amenity-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12h18" />
+              <path d="M3 6h18" />
+              <path d="M3 18h18" />
+              <path d="M5 3v18" />
+              <path d="M19 3v18" />
+              <circle cx="12" cy="12" r="3" />
+            </svg></div>
+          <h3 data-i18n="am_laundry">Kir yuvish xizmati</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ LOCATION ═══════════ -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="loc_label">Joylashuv</span>
+        <h2 class="section-title" data-i18n="loc_title">Bizning manzil</h2>
+        <p class="section-subtitle" data-i18n="loc_subtitle">Toshkentning Yakkasaroy tumanida qulay joylashuv.</p>
+        <hr class="section-divider">
+      </div>
+      <div class="location-grid">
+        <div class="location-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1499.2!2d69.2636339!3d41.2918342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b9f2757d1f9%3A0x9cc00ddfc8e8852b!2sHotel%20Shosh%20Palace!5e0!3m2!1sen!2s!4v1710000000000!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Hotel Shosh Palace xaritada">
+          </iframe>
+        </div>
+        <div class="location-info reveal d2">
+          <h3>Hotel Shosh Palace</h3>
+          <div class="location-addr">
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Minglar 25<br>
+              Yakkasaroy tumani<br>
+              Toshkent, O'zbekiston
+            </p>
+          </div>
+
+          <div class="nearby-tag" data-i18n="nearby_title">Yaqin atrofda</div>
+          <div class="nearby-list">
+            <div class="nearby-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+              </svg>
+              <span class="n-name" data-i18n="near_airport">Toshkent xalqaro aeroporti</span>
+              <span class="n-dist">~15 min</span>
+            </div>
+            <div class="nearby-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18" />
+                <path d="M5 21V7l8-4v18" />
+                <path d="M19 21V11l-6-4" />
+              </svg>
+              <span class="n-name" data-i18n="near_center">Shahar markazi</span>
+              <span class="n-dist">~3 km</span>
+            </div>
+            <div class="nearby-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="3" width="16" height="18" rx="2" />
+                <path d="M12 3v18" />
+                <path d="M4 9h16" />
+                <path d="M4 15h16" />
+              </svg>
+              <span class="n-name" data-i18n="near_metro">Yaqin metro stantsiyasi</span>
+              <span class="n-dist">~1.5 km</span>
+            </div>
+          </div>
+
+          <!-- Map Links -->
+          <div class="map-links">
+            <a href="https://www.google.com/maps/place/Hotel+Shosh+Palace/@41.2918342,69.2636339,17z/data=!4m9!3m8!1s0x38ae8b9f2757d1f9:0x9cc00ddfc8e8852b!5m2!4m1!1i2!8m2!3d41.2918302!4d69.2662088!16s%2Fg%2F11j84vvt0q"
+              target="_blank" rel="noopener" class="map-link-btn google">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span data-i18n="open_google">Google Maps'da ochish</span>
+            </a>
+            <a href="https://yandex.uz/maps/org/201467329547/?ll=69.266424,41.291851&mode=search&text=Hotel%20Shosh%20Palace&z=14"
+              target="_blank" rel="noopener" class="map-link-btn yandex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v8" />
+                <path d="M8 12h8" />
+              </svg>
+              <span data-i18n="open_yandex">Yandex Maps'da ochish</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA ═══════════ -->
+  <section class="cta" id="book">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label" data-i18n="cta_label">Bugun band qiling</span>
+        <h2 class="section-title" style="color:#fff;" data-i18n="cta_title">Bugun xona band qiling</h2>
+        <p class="section-subtitle" data-i18n="cta_subtitle">Qulay xonalar, ajoyib joylashuv va do'stona xizmat
+          Toshkentda.</p>
+        <a href="https://www.booking.com/hotel/uz/shosh-palace.html" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary" style="margin-top:8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+          </svg>
+          <span data-i18n="cta_book">Joy band qilish</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-top">
+            <img src="hotel-images/Logo.png" alt="Hotel Shosh Palace" width="44" height="44">
+            <h3>Hotel Shosh <span>Palace</span></h3>
+          </div>
+          <p data-i18n="footer_desc">Toshkent shahridagi qulay mehmonxona. Zamonaviy xonalar, do'stona xizmat va yoqimli
+            dam olish uchun barcha sharoitlar.</p>
+          <div class="footer-social">
+            <a href="https://t.me/Shoshpalace" target="_blank" rel="noopener" aria-label="Telegram"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg></a>
+            <a href="https://wa.me/998936730307" target="_blank" rel="noopener" aria-label="WhatsApp"><svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg></a>
+            <a href="https://www.instagram.com/shosh_palace_hotel" target="_blank" rel="noopener"
+              aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></a>
+            <a href="https://www.google.com/maps/place/Hotel+Shosh+Palace/@41.2918342,69.2636339,17z/" target="_blank"
+              rel="noopener" aria-label="Google Maps"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_links">Havolalar</h4>
+          <a href="#rooms" data-i18n="nav_rooms">Xonalar</a>
+          <a href="#amenities" data-i18n="nav_amenities">Qulayliklar</a>
+          <a href="#gallery" data-i18n="nav_gallery">Galereya</a>
+          <a href="#location" data-i18n="nav_location">Joylashuv</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact">Aloqa</h4>
+          <div class="footer-ci"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg><a href="tel:+998951464000">+998 95 146 40 00</a></div>
+          <div class="footer-ci"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg><a href="https://t.me/Shoshpalace" target="_blank" rel="noopener">@Shoshpalace</a></div>
+          <div class="footer-ci"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg><a href="https://wa.me/998936730307" target="_blank" rel="noopener">WhatsApp</a></div>
+          <div class="footer-ci"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg><a href="https://www.instagram.com/shosh_palace_hotel" target="_blank"
+              rel="noopener">@shosh_palace_hotel</a></div>
+          <div class="footer-ci"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg><span>Minglar 25, Toshkent</span></div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_address">Manzil</h4>
+          <p>Minglar 25</p>
+          <p data-i18n="footer_district">Yakkasaroy tumani</p>
+          <p data-i18n="footer_city">Toshkent, O'zbekiston</p>
+          <p style="margin-top:14px;"><a
+              href="https://www.google.com/maps/place/Hotel+Shosh+Palace/@41.2918342,69.2636339,17z/" target="_blank"
+              rel="noopener" style="color:var(--color-warm);" data-i18n="footer_map_link">Google Maps'da ochish →</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Hotel Shosh Palace.</span>
+        <span>Yakkasaroy, Toshkent, O'zbekiston</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ FLOATING ACTIONS ═══════════ -->
+  <div class="floating-actions">
+    <a href="https://wa.me/998936730307" class="floating-btn whatsapp" target="_blank" rel="noopener"
+      aria-label="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+      </svg>
+    </a>
+    <a href="https://t.me/Shoshpalace" class="floating-btn telegram" target="_blank" rel="noopener"
+      aria-label="Telegram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13" />
+        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+      </svg>
+    </a>
+    <a href="tel:+998951464000" class="floating-btn phone" aria-label="Qo'ng'iroq qilish">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- Lightbox with Navigation -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Yopish">&times;</button>
+    <button class="lightbox-prev" aria-label="Oldingi">&#8249;</button>
+    <button class="lightbox-next" aria-label="Keyingi">&#8250;</button>
+    <img src="" alt="">
+    <div class="lightbox-counter"><span id="lb-current">1</span> / <span id="lb-total">9</span></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
