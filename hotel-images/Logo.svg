@@ -1,0 +1,19 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Minimalist Hexagon Crest -->
+  <path d="M50 5L10 25V75L50 95L90 75V25L50 5Z" stroke="#B08D4E" stroke-width="2" />
+  <path d="M50 12L20 28V72L50 88L80 72V28L50 12Z" fill="#B08D4E" opacity="0.08" />
+  
+  <!-- Central "A" for AKIR -->
+  <path d="M50 30L35 70M50 30L65 70M40 58H60" stroke="#B08D4E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Subtle Dots for Luxury feel -->
+  <circle cx="50" cy="5" r="1.5" fill="#B08D4E"/>
+  <circle cx="10" cy="25" r="1.5" fill="#B08D4E"/>
+  <circle cx="90" cy="25" r="1.5" fill="#B08D4E"/>
+  <circle cx="10" cy="75" r="1.5" fill="#B08D4E"/>
+  <circle cx="90" cy="75" r="1.5" fill="#B08D4E"/>
+  <circle cx="50" cy="95" r="1.5" fill="#B08D4E"/>
+  
+  <!-- Small Stars decoration -->
+  <path d="M47 22L50 16L53 22" stroke="#B08D4E" stroke-width="1.5" fill="#B08D4E"/>
+</svg>
